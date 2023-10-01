@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2023-09-30 18:08:08.505069",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "sub_title",
+  "banner_image",
+  "column_break_jqti",
+  "creator",
+  "published",
+  "route",
+  "section_break_mzfu",
+  "body"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sub_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sub Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jqti",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "creator",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Creator",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Route"
+  },
+  {
+   "fieldname": "section_break_mzfu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "body",
+   "fieldtype": "Text Editor",
+   "label": "Body",
+   "reqd": 1
+  },
+  {
+   "fieldname": "banner_image",
+   "fieldtype": "Attach Image",
+   "label": "Banner Image",
+   "reqd": 1
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2023-09-30 18:21:20.779885",
+ "modified_by": "Administrator",
+ "module": "Blog App",
+ "name": "Userblog",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "blogs",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
